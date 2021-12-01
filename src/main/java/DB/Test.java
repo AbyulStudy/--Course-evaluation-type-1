@@ -8,12 +8,15 @@ public class Test {
 
 	public static void main(String[] args) throws ParseException {
 		// TODO Auto-generated method stub
-        //String to Date 변환
-        String from = "20190303";
-        SimpleDateFormat fDate = new SimpleDateFormat("yyyy.MM.dd"); //같은 형식으로 맞춰줌
-        Date n = fDate.parse(from);
-
-        System.out.println(n.getTime());
+		// 날짜 형식 변경하기
+		String joindate = "2020-11-02 00:00:00";
+		SimpleDateFormat dtFormat = new SimpleDateFormat("yyyyMMdd");
+		SimpleDateFormat newDate = new SimpleDateFormat("yyyy-MM-dd");
+		Date formatDate = dtFormat.parse(joindate);
+		String joinDateStr = newDate.format(formatDate);
+		System.out.println("joindate : " + joindate);
+		System.out.println("formatDate : " + formatDate);
+		System.out.println("joinDateStr : " + joinDateStr);
 	}
 
 }
