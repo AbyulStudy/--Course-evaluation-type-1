@@ -1,0 +1,60 @@
+@charset "UTF-8";
+*{
+	margin: 0;
+	padding: 0;
+}
+
+header{
+	width: 100%;
+	height: 120px;
+	background: blue;
+}
+header h1{
+	line-height: 120px;
+	text-align: center;
+	color: white;
+}
+nav{
+	width: 100%;
+	height: 60px;
+	background: purple;
+}
+nav td {
+	padding-left: 15px;	
+}
+nav td a {
+	color: white;
+	text-decoration: none;
+	line-height: 60px;
+	font-size: 18px;
+}
+section {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background: gray;
+}
+section div {
+	padding: 10px;
+}
+section h1 {
+	padding: 20px;
+	text-align: center;
+}
+footer{
+	width:100%;
+	height:100px;
+	line-height:100px;
+	position: fixed;
+	bottom: 0;
+	background: blue;
+	color: white;
+	text-align: center;
+}
+
+section table{
+	margin: 0 auto;
+}
+section table tr {
+	text-align: center;
+}
